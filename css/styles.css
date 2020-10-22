@@ -214,6 +214,10 @@ img {
   transition: background-color 250ms var(--t-timing-function), border-color 250ms var(--t-timing-function);
 }
 
+.check-accept > input:focus ~ .check-icon {
+  border: 2px solid var(--accent-text-color);
+}
+
 .check-accept > input:checked ~ .check-icon {
   background-color: var(--accent-text-color);
   background-image: url('../img/icon_check.svg');
@@ -462,11 +466,12 @@ img {
 .benefits-list-item-icon {
   --color2: var(--basic-text-color);
   --color3: var(--accent-text-color);
-  transition: 2500ms;
+  transition: all 2500ms;
 }
 
 .benefits-list-item-icon-bcg:hover .benefits-list-item-icon {
   --color3: rgb(255, 255, 255);
+  --color2: var(--accent-text-color);
 }
 
 .benefits-list-item > h3 {
