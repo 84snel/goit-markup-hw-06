@@ -99,7 +99,7 @@ img {
   /* width: 100%;
   height: 100%; */
   overflow-y: auto;
-  scrollbar-width: none;
+  scrollbar-width: none; /*в мозилле работает :)*/
 }
 
 .modal-main::-webkit-scrollbar {
@@ -589,7 +589,7 @@ img {
   margin-top: 16px;
 }
 
-.team-list-item-groop > .team-list-item-slink + .team-list-item-slink {
+.team-list-item-groop > li + li {
   margin-left: 10px;
 }
 
