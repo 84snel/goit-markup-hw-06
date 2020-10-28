@@ -464,14 +464,14 @@ img {
 }
 
 .benefits-list-item-icon {
+  display: inline-block;
   --color2: var(--basic-text-color);
   --color3: var(--accent-text-color);
-  transition: all 2500ms;
 }
 
 .benefits-list-item-icon-bcg:hover .benefits-list-item-icon {
-  --color3: rgb(255, 255, 255);
   --color2: var(--accent-text-color);
+  --color3: rgb(255, 255, 255);
 }
 
 .benefits-list-item > h3 {
@@ -735,6 +735,7 @@ img {
 }
 
 .joinnews > form {
+  display: inline-flex;
   margin-top: 20px;
 }
 
